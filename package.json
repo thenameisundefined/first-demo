@@ -1,0 +1,18 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client ",
+    "client":"npm start --prefix client",
+    "start": "node index.js",
+    "sever": "nodemon index.js",
+    "dev":"concurrently \"npm run sever\" \"npm run client\""
+  },
+  "author": "HDS",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parse": "^0.1.0"
+  }
+}
